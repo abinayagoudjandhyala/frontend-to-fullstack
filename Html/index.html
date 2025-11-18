@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<head>
+    <title>
+        Learning HTML!
+        <meta charset="UTF-8">
+        <meta name ="description" content="learning HTML">
+        <meta name ="keywords" content="HTML, LEARNING,BASICS">
+        <meta name ="viewport" content="width=device-width,initial-scale=1.0">
+    <!--<meta http-equiv="refresh" content="30">-->
+    </title>
+</head>
+<body>
+    <!--this is a comment-->
+    <h1 style ="color: red">This is H1 tag </h1>
+    <hr>
+<h2 style ="color:rgb(5,240,232)">This is H2 tag </h2>
+<h3 style="color: #e31b1b;">This is H3 tag </h3>
+<h4>This is H4 tag </h4>
+<h5>This is H5 tag </h5>
+<br>
+
+<h6>This is H6 tag </h6>
+<br>
+<div style="background-color:grey">
+<p>Lorem ipsum <span style="color:red">dolor sit amet consectetur adipisicing elit. Eaque natus sint enim voluptatem aspernatur delectus minus hic recusandae temporibus </span>perferendis, quaerat mollitia, ut consectetur sed architecto molestiae veritatis voluptates odio?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero numquam quam voluptatum consequatur impedit saepe molestiae unde laudantium? Autem provident debitis voluptatem doloribus animi iure cupiditate esse deleniti fuga recusandae!</p>
+</div>
+<a href ="https://www.google.com" target="_blank" title="this takes u to google">Google</a>
+
+
+<!--- text formating texts-->
+<p>this is a normal text</p>
+<p>this is a <b>bold</b> text</p>
+<p>this is a <i>italic</i> text</p>
+<p>this is a <big>big</big> text</p>
+<p>this is a <small>small</small> text</p>
+<p>this is a <sub> subscript</sub> text</p>
+<p>this is a <sup> superscript</sup> text</p>
+<p>this is a <ins> inserted</ins> text</p>
+<p>this is a <del> deleted</del> text</p>
+<p>this is a <mark> marked</mark> text</p>
+
+<!--lists-->
+
+<h4>unordered list</h4>
+<ul>
+    <li>pizza</li>
+    <li>tomato</li>
+    <li>chesse</li>
+    </ul>
+
+<h4>ordered list</h4>
+<ol type ='A'>
+    <li>mango</li>
+    <li>banana</li>
+    </ol>
+
+    <h4>Description list</h4>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hypertext Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+        </dl>
+
+<table bgcolor ="black" width="700">
+<tr bgcolor="grey">
+<th width="100">Monday</th>
+<th width="100">Tuesday</th>
+<th width="100">Wednesday</th>
+<th width="100">Thursday</th>
+<th width="100">Friday</th>
+<th width="100">Saturday</th>
+<th width="100">Sunday</th>
+</tr>
+<tr bgcolor ="lightgrey" align="center">
+    <td>closed</td>
+    <td>closed</td>
+    <td>opened</td>
+    <td>closed</td>
+    <td>closed</td>
+    <td>closed</td>
+    <td>opened</td>
+</tr>
+</table>
+<button onclick="doSomething()" style="background-color:red;color:white">
+       click me 
+    </button>
+
+    <p id ="test">hello</p>
+   <script>
+    function doSomething(){
+        document.getElementById("test").innerHTML="you clicked me!";
+    }
+    </script>
+
+
+<form>
+    <label for="fname"> first name:</label>
+<input type="text" id="fname" name ="fname" placeholder="enter username"><br>
+
+<label for="lname"> last name:</label>
+<input type="text" id="lname" name ="lname" placeholder="enter username"><br>
+
+<label for="pass">password:</label>
+<input type="password" id="pass" name="pass maxlength="12">
+
+
+<label for="email">email:</label>
+<input type="email" id ="email" name="email" placeholder="abi@gmail.com">
+<br>
+<label for="phone">phone:</label>
+<input type="tel" id ="phone" name="phone" placeholder="enter phone number"><br>
+<label for="bdate">Birthday date:</label>
+<input type="date" id ="bdate" name="bdate"><br>
+<label for="quantity">quantity:</label>
+<input type="number" id ="quantity" name="quantity" placeholder="enter quantity"><br>
+<br>
+<label>Mr.</label>
+<input type="radio" name="title" value="mr" >
+<label>Mrs.</label>
+<input type="radio" name="title" value="mrs">
+<label>Ms.</label>
+<input type="radio" name="title" value="ms">
+
+<br>
+
+<label for="payment">payment:</label>
+<select id="payment" name="payment">
+    <option value="credit card">credit card</option>>
+     <option value="debit card">debit card</option>>
+</select>
+<label for="subscribe">subscribe:</label>
+<input type="checkbox" id = "subscribe" name="subscribe">
+
+     <input type ="reset">
+    </form>
+
+<!--this does not have access<iframe src="https://www.bing.com" width="700" height="400"></iframe>-->
+
+<a href="https://www.bing.com/ck/a?!&&p=0ad05f7f76ee7baa0dac44bba71321aa55c621aee9683fa976999254e33a4df6JmltdHM9MTc2MzMzNzYwMA&ptn=3&ver=2&hsh=4&fclid=022fc693-3bb4-63a9-0a87-d4d73a6662f6&psq=shaun+the+sheep&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvU2hhdW5fdGhlX1NoZWVw"><img src ="images/shaun-the-sheep-show.jpg" height="300" alt="This is my favourite cartoon" title ="shaunnn"></a>
+
+<audio controls src="groovy-vibe-427121.mp3">
+
+</body>
+</html>
